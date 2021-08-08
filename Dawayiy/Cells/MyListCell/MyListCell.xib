@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DIN NEXT ARABIC REGULAR.otf">
+            <string>DINNextLTW23-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyListCell" id="gTV-IL-0wX" customClass="MyListCell" customModule="دوائي" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="192" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="192" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pUq-uE-NmA">
+                        <rect key="frame" x="0.0" y="0.0" width="192" height="250"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="672-PG-5NP" customClass="RoundedButton" customModule="دوائي" customModuleProvider="target">
+                                <rect key="frame" x="8" y="206" width="176" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="TRc-ba-4SD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="16"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="4"/>
+                                <state key="normal" title="حذف من قائمتي">
+                                    <color key="titleColor" red="0.9882352941176471" green="0.24705882352941178" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.99215686274509807" green="0.82745098039215681" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="56S-iC-x2g" customClass="RoundRectView" customModule="دوائي" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="192" height="198"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="دواء لعلاج الكبد المسالك البولية بالعربي" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSy-eP-7bY">
+                                        <rect key="frame" x="8" y="149" width="176" height="45"/>
+                                        <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="medicines" translatesAutoresizingMaskIntoConstraints="NO" id="XHN-Te-zXV">
+                                        <rect key="frame" x="8" y="8" width="176" height="141"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="141" id="cjb-wh-Vtd"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.4823529412" green="0.66274509800000003" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="XHN-Te-zXV" firstAttribute="leading" secondItem="56S-iC-x2g" secondAttribute="leading" constant="8" id="7rd-77-9Z4"/>
+                                    <constraint firstAttribute="trailing" secondItem="oSy-eP-7bY" secondAttribute="trailing" constant="8" id="EkF-D1-zyv"/>
+                                    <constraint firstAttribute="bottom" secondItem="oSy-eP-7bY" secondAttribute="bottom" constant="4" id="Fm0-hC-DYN"/>
+                                    <constraint firstItem="XHN-Te-zXV" firstAttribute="top" secondItem="56S-iC-x2g" secondAttribute="top" constant="8" id="HDo-Y3-kxl"/>
+                                    <constraint firstItem="oSy-eP-7bY" firstAttribute="leading" secondItem="56S-iC-x2g" secondAttribute="leading" constant="8" id="NnL-vI-VW3"/>
+                                    <constraint firstItem="oSy-eP-7bY" firstAttribute="centerX" secondItem="56S-iC-x2g" secondAttribute="centerX" id="OUM-hU-iHI"/>
+                                    <constraint firstAttribute="trailing" secondItem="XHN-Te-zXV" secondAttribute="trailing" constant="8" id="PEU-Vs-KuA"/>
+                                    <constraint firstItem="oSy-eP-7bY" firstAttribute="top" secondItem="XHN-Te-zXV" secondAttribute="bottom" id="tl4-W0-EK4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="672-PG-5NP" secondAttribute="trailing" constant="8" id="8z8-aX-aiw"/>
+                            <constraint firstItem="56S-iC-x2g" firstAttribute="leading" secondItem="pUq-uE-NmA" secondAttribute="leading" id="96C-B7-fCU"/>
+                            <constraint firstAttribute="bottom" secondItem="672-PG-5NP" secondAttribute="bottom" constant="8" id="czb-S3-b2J"/>
+                            <constraint firstItem="672-PG-5NP" firstAttribute="top" secondItem="56S-iC-x2g" secondAttribute="bottom" constant="8" id="qwk-0w-d7I"/>
+                            <constraint firstAttribute="trailing" secondItem="56S-iC-x2g" secondAttribute="trailing" id="rFv-cu-elm"/>
+                            <constraint firstItem="672-PG-5NP" firstAttribute="leading" secondItem="pUq-uE-NmA" secondAttribute="leading" constant="8" id="sWr-Xy-8sY"/>
+                            <constraint firstItem="56S-iC-x2g" firstAttribute="top" secondItem="pUq-uE-NmA" secondAttribute="top" id="v2v-gY-pVb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="pUq-uE-NmA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CY9-R5-Zhk"/>
+                <constraint firstAttribute="trailing" secondItem="pUq-uE-NmA" secondAttribute="trailing" id="IkE-uZ-tsP"/>
+                <constraint firstItem="pUq-uE-NmA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SSO-VC-1F5"/>
+                <constraint firstAttribute="bottom" secondItem="pUq-uE-NmA" secondAttribute="bottom" id="iwM-ys-Kf9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="192" height="251"/>
+            <connections>
+                <outlet property="deleteBtn" destination="672-PG-5NP" id="31e-2g-fnz"/>
+                <outlet property="image" destination="XHN-Te-zXV" id="2K3-F3-IRl"/>
+                <outlet property="name" destination="oSy-eP-7bY" id="Ghk-wp-uv2"/>
+            </connections>
+            <point key="canvasLocation" x="-160.86956521739131" y="214.95535714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="medicines" width="1080" height="720"/>
+    </resources>
+</document>

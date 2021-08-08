@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DIN NEXT ARABIC REGULAR.otf">
+            <string>DINNextLTW23-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NotificationsCell" id="gTV-IL-0wX" customClass="NotificationsCell" customModule="دوائي" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKv-9r-fa5" customClass="RoundRectView" customModule="دوائي" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="431" height="120"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4J-kL-hp0">
+                                <rect key="frame" x="271" y="8" width="39" height="24"/>
+                                <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hio-wM-5Bu" customClass="RoundRectView" customModule="دوائي" customModuleProvider="target">
+                                <rect key="frame" x="318" y="8" width="105" height="104"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homebackground" translatesAutoresizingMaskIntoConstraints="NO" id="3wf-jG-8OS">
+                                        <rect key="frame" x="8" y="8" width="89" height="88"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3wf-jG-8OS" secondAttribute="trailing" constant="8" id="3gU-ct-6AW"/>
+                                    <constraint firstItem="3wf-jG-8OS" firstAttribute="top" secondItem="hio-wM-5Bu" secondAttribute="top" constant="8" id="BNN-Nu-ie6"/>
+                                    <constraint firstAttribute="bottom" secondItem="3wf-jG-8OS" secondAttribute="bottom" constant="8" id="ESx-f3-b5S"/>
+                                    <constraint firstItem="3wf-jG-8OS" firstAttribute="leading" secondItem="hio-wM-5Bu" secondAttribute="leading" constant="8" id="F6b-ey-z15"/>
+                                    <constraint firstAttribute="width" constant="105" id="qYc-PY-593"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elo-WO-Ntp">
+                                <rect key="frame" x="8" y="40" width="302" height="24"/>
+                                <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4823529412" green="0.66274509800000003" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hio-wM-5Bu" secondAttribute="bottom" constant="8" id="GWl-i7-mDY"/>
+                            <constraint firstItem="hio-wM-5Bu" firstAttribute="leading" secondItem="F4J-kL-hp0" secondAttribute="trailing" constant="8" id="GZI-j1-i1A"/>
+                            <constraint firstItem="hio-wM-5Bu" firstAttribute="top" secondItem="FKv-9r-fa5" secondAttribute="top" constant="8" id="MSb-so-sfY"/>
+                            <constraint firstItem="Elo-WO-Ntp" firstAttribute="leading" secondItem="FKv-9r-fa5" secondAttribute="leading" constant="8" id="P6q-jf-SHu"/>
+                            <constraint firstAttribute="trailing" secondItem="hio-wM-5Bu" secondAttribute="trailing" constant="8" id="iXt-cn-caB"/>
+                            <constraint firstItem="F4J-kL-hp0" firstAttribute="top" secondItem="FKv-9r-fa5" secondAttribute="top" constant="8" id="j2L-Nl-ZSA"/>
+                            <constraint firstItem="hio-wM-5Bu" firstAttribute="leading" secondItem="Elo-WO-Ntp" secondAttribute="trailing" constant="8" id="nCv-4S-Hfv"/>
+                            <constraint firstItem="Elo-WO-Ntp" firstAttribute="top" secondItem="F4J-kL-hp0" secondAttribute="bottom" constant="8" id="tQE-GL-1QC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="FKv-9r-fa5" secondAttribute="trailing" id="HeE-0O-SdW"/>
+                <constraint firstItem="FKv-9r-fa5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KtF-F8-Yar"/>
+                <constraint firstAttribute="bottom" secondItem="FKv-9r-fa5" secondAttribute="bottom" id="qMk-yf-mWy"/>
+                <constraint firstItem="FKv-9r-fa5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="t5y-GX-DjR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="431" height="137"/>
+            <connections>
+                <outlet property="notficationContent" destination="Elo-WO-Ntp" id="bch-Dt-kSb"/>
+                <outlet property="notificationImage" destination="3wf-jG-8OS" id="WFV-Iq-OWt"/>
+                <outlet property="notificationTitle" destination="F4J-kL-hp0" id="kkS-Oj-xgJ"/>
+            </connections>
+            <point key="canvasLocation" x="15.217391304347828" y="177.12053571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="homebackground" width="1280" height="720"/>
+    </resources>
+</document>

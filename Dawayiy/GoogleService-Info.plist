@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>392791139027-ta9ndvqfg96g4ti29hd7inqbq20te6re.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.392791139027-ta9ndvqfg96g4ti29hd7inqbq20te6re</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCELheGyrsyfiEcBIUsEvR0H2govpefwiE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>392791139027</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.badrsmartsystems.Dawayiy</string>
+	<key>PROJECT_ID</key>
+	<string>dawaee-35e1e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dawaee-35e1e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:392791139027:ios:6157438c7ccaebd2f1aa26</string>
+	<key>DATABASE_URL</key>
+	<string>https://dawaee-35e1e.firebaseio.com</string>
+</dict>
+</plist>
